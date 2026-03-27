@@ -1,0 +1,52 @@
+site_name: SiteName
+site_description: Site | Name
+site_author: Author
+copyright: Copyright &copy; Org 2025
+
+# Source and destination directories
+docs_dir: md
+site_dir: _site
+
+# Turn off the pretty URLs
+use_directory_urls: false
+
+# Theme — you can change this to 'readthedocs', 'material', etc.
+theme:
+  name: material
+  logo: images/badge.png
+  favicon: images/favicon.png
+  palette:
+    primary: white
+  features:
+    - toc.follow
+    - toc.integrate
+    - navigation.footer
+    - navigation.top
+
+extra_css:
+  - style.css
+
+extra:
+  generator: false # turns off standard mkdocs theme
+  build_year: "2025"
+  doc_title: "Title"
+  doc_author: "Author"
+  doc_classification: "Internal"
+  doc_status: "Draft"
+  doc_approval_date: "n/a"
+
+# Optional: define navigation order (optional but recommended)
+# You can omit this section if you just want MkDocs to include all .md files automatically.
+nav:
+  - Home: home.md
+  - Group:
+    - Page-1: page-1.md
+    - Page-2: page-2.md
+
+
+# plugins needed for better formatting support
+plugins:
+  - search
+  - offline:
+      enabled: true
+

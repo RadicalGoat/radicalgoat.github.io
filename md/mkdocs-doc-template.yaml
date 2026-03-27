@@ -1,0 +1,10 @@
+# Document meta-data
+title: "Title"
+author: "Author"
+date: "01/01/2025"
+colorlinks: true
+
+# Table of Contents
+toc: true
+numbersections: true
+toc-depth: 3
